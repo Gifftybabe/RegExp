@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression Tester</title>
+</head>
+<body>
+    <h1>Regular Expression Tester</h1>
+
+    <!-- Question One -->
+    <h2>Question One:</h2>
+    <p>For each of the following items, write a regular expression to test whether any of the given substrings occur in a string.</p>
+    <ul>
+        <li>1. car and cat</li>
+        <li>2. pop and prop</li>
+        <li>3. ferret, ferry, and ferrari</li>
+        <li>4. Any word ending in ious</li>
+        <li>5. A whitespace character followed by a period, comma, colon, or semicolon</li>
+        <li>6. A word longer than six letters</li>
+        <li>7. A word without the letter e (or E)</li>
+    </ul>
+
+    <label for="questionOneInput">Enter a string:</label>
+    <input type="text" id="questionOneInput" placeholder="Enter a string...">
+    <button onclick="testQuestionOne()">Test</button>
+    <p id="questionOneResult"></p>
+
+    <!-- Question Two -->
+    <h2>Question Two:</h2>
+    <p>Imagine you have written a story and used single quotation marks throughout to mark pieces of dialogue. Now you want to replace all the dialogue quotes with double quotes, while keeping the single quotes used in contractions like aren’t.</p>
+    <label for="questionTwoInput">Enter text with single quotes:</label>
+    <input type="text" id="questionTwoInput" placeholder="Enter text with single quotes...">
+    <button onclick="replaceSingleQuotes()">Replace</button>
+    <p id="questionTwoResult"></p>
+
+    <!-- Question Three -->
+    <h2>Question Three:</h2>
+    <p>Write an expression that matches only JavaScript-style numbers.</p>
+    <label for="questionThreeInput">Enter a string:</label>
+    <input type="text" id="questionThreeInput" placeholder="Enter a string...">
+    <button onclick="testQuestionThree()">Test</button>
+    <p id="questionThreeResult"></p>
+
+    <script>
+        // JavaScript code for testing regular expressions
+        function testQuestionOne() {
+            // Implement regular expressions and testing for Question One
+            const input = document.getElementById("questionOneInput").value;
+            // Test and display results in 'questionOneResult' element
+        }
+
+        function replaceSingleQuotes() {
+            // Implement regular expression replacement for Question Two
+            const input = document.getElementById("questionTwoInput").value;
+            // Replace single quotes and display the result in 'questionTwoResult' element
+        }
+
+        function testQuestionThree() {
+            // Implement regular expressions and testing for Question Three
+            const input = document.getElementById("questionThreeInput").value;
+            // Test and display results in 'questionThreeResult' element
+        }
+    </script>
+</body>
+</html>
+
